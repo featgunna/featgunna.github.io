@@ -1,5 +1,5 @@
-# ttazee28.github.io
-A personal website for Timur Tazeev
+# featgunna.github.io
+A personal website for Timur Tazeev </br>
 Created as a part of CS321 Software Engineering class @ Colby College 2025
 Author: Timur Tazeev
 
@@ -18,7 +18,7 @@ Author: Timur Tazeev
 
 ## Website link
 
-[ttazee28.github.io](https://ttazee28.github.io)
+[featgunna.github.io](https://featgunna.github.io)
 
 
 
