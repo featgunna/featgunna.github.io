@@ -1,0 +1,58 @@
+/* Styling of the skills section */
+
+/* Subheading for a skill name */
+.skill-subheading {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/* Container for the skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+/* A skill item */
+.skill-item {
+    background: var(--card-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Nice effect when a mouse is hovered above a skill */
+.skill-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* Logo for a skill */
+.skill-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+/* NumPy and SciPy do not have logos in the logo package,
+ * so for them the logo is just their name
+ */
+.skill-item .no-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Name of a skill */
+.skill-item p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--heading-color);
+}

@@ -1,0 +1,83 @@
+/* Basic style for the whole page */
+
+/* Main color palette*/
+:root {
+    --primary-color: #4dabf7;
+    --background-color: #0a192f;
+    --text-color: #ccd6f6;
+    --card-color: #112240;
+    --heading-color: white;
+    --shadow: rgba(0, 0, 0, 0.7);
+}
+
+/* Code for the content to fit the page properly in any browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page body styling */
+body {
+    font-family: 'Momo Trust Display', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Links styling */
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Code for smooth scrolling in between sections */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sections styling */
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Heading */
+.section-heading {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Heading underline */
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: var(--primary-color);
+    margin-top: 10px;
+}
+
+/* Separate heading without underline for the contact section */
+.contact-heading {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Note about author and creation date */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--card-color);
+    color: var(--text-color);
+    font-size: 0.9rem;
+}

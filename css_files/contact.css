@@ -1,0 +1,32 @@
+/* Styling for the contact section */
+
+/* A container for a contact */
+#contact {
+    text-align: center;
+}
+
+/* Name of type of contact (LinkedIn, GitHub etc.) */
+#contact p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Link */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-links a {
+    color: var(--text-color);
+    font-size: 3rem;
+    transition: all 0.3s;
+}
+
+/* Effect when mouse is hovered above a contact */
+.contact-links a:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}

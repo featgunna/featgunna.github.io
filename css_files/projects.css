@@ -1,0 +1,52 @@
+/* Styling for the projects section */
+
+/* Grid for listing the projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Project container */
+.project-card {
+    background: var(--card-color);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: all 0.3s ease;
+}
+
+/* Color animation when a mouse is hovered on a project card */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px var(--shadow);
+}
+
+/* Project name */
+.project-card h3 {
+    font-size: 1.5rem;
+    color: var(--heading-color);
+    margin-bottom: 10px;
+}
+
+/* Project description */
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* Container for technology (languages and tools) tags */
+.project-technologies {
+    margin-bottom: 15px;
+}
+
+.project-technologies span {
+    display: inline-block;
+    background: #233554;
+    color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 2px;
+}

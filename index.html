@@ -1,0 +1,264 @@
+<!-- The html layout document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta-tags for search engines -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal website of an awesome magnificent talented hilarious open to work Software Engineer Timur Tazeev">
+    <meta name="author" content="Timur Tazeev">
+    <title> Timur Tazeev | Personal website </title>
+
+    <!-- Linking CSS stylesheets -->
+    <link rel="stylesheet" href="css_files/style.css">
+    <link rel="stylesheet" href="css_files/navigation.css">
+    <link rel="stylesheet" href="css_files/introduction.css">
+    <link rel="stylesheet" href="css_files/experience.css">
+    <link rel="stylesheet" href="css_files/projects.css">
+    <link rel="stylesheet" href="css_files/skills.css">
+    <link rel="stylesheet" href="css_files/contact.css">
+    <link rel="stylesheet" href="css_files/optimization.css">
+
+    <!-- Imported fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Momo+Trust+Display&family=Sixtyfour&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Sixtyfour&display=swap" rel="stylesheet">
+
+    <!-- Imported brand logo package for the skills and contact section -->
+    <script src="https://kit.fontawesome.com/c8d3329b4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<nav id="navigation">
+    <a href="#home" class="logo">Timur Tazeev</a> <!-- Pressing the name scrolls to the top of the page -->
+    <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Introduction section -->
+<section id="home">
+    <h1>Hi! My name is Tim</h1>
+
+    <h2>I <span id="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+
+    <p class="text">
+        I am a Software Engineer and a student at Colby College, majoring in Computer Science and Mathematics.
+    </p>
+    <p class="text">
+        Manu Prakash and his Foldoscope — 97-cent paper-based microscope for
+        developing countries — inspired me to study engineering, and Software Engineering in particular.
+        I explore the world of technology, looking for ways to harness its
+        power for positive change.
+    </p>
+    <p class="text">
+        I want to pursue a career in Social Entrepreneurship, enriching the lives
+        of disadvantaged members of society through technological products and making innovations accessible to anyone who needs them.
+        Let's connect if you want to do it with me!
+    </p>
+
+    <a href="#contact" class="cta-button">Connect With Me</a>
+    <a href="#projects" class="cta-button"> View My Projects</a>
+    <a href="Resume.pdf" target="_blank" class="cta-button">Download My Resume</a> <!-- Opens resume in a new tab -->
+</section>
+
+<!-- Experience section -->
+<section id="experience">
+    <h2 class="section-heading">Experience</h2>
+
+    <div class="experience-list">
+
+        <div class="experience-card">
+            <div class="experience-image">
+                <img src="images/colby_logo.png">
+            </div>
+            <div class="experience-details">
+                <p class="experience-date">February 2025 - Present</p>
+                <h3>Colby College</h3>
+                <h4>Teaching Assistant & Grader</h4>
+                <ul>
+                    <li> Graded assignments and provided academic support for students in Algorithms and Data Structures, Calculus
+                        and Linear Algebra courses through TA sessions and individual support meetings</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-image">
+                <img src="images/vk_logo.png">
+            </div>
+            <div class="experience-details">
+                <p class="experience-date">June 2023 - July 2023</p>
+                <h3>Vkontakte</h3>
+                <h4>Product Management Intern</h4>
+                <ul>
+                    <li>Gathered software requirements and technical specifications for integration of a sleep cycle tracking app into the
+                        social media’s ecosystem</li>
+                    <li>Collected user stories to develop acceptance criteria for a reward system serving over 50 million monthly users</li>
+                    <li> Created a detailed execution plan following key SDLC phases, outlining sprint structures and release targets
+                        based on Agile principles</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-image">
+                <img src="images/rqc_logo.png">
+            </div>
+            <div class="experience-details">
+                <p class="experience-date">May 2022 - June 2022</p>
+                <h3>Russian Quantum Center</h3>
+                <h4>Research Intern</h4>
+                <ul>
+                    <li>Developed computational models of chaotic behavior of nonlinear dynamical systems through Runge-Kutta RK4
+                        iterative methods</li>
+                    <li>Optimized computational efficiency of simulations to determine Lyapunov exponents and test system stability
+                        around equilibrium points using NumPy, SciPy and Pandas</li>
+                    <li>Employed Matplotlib and Seaborn to generate visualizations of chaotic attractors, creating Poincare maps and
+                        phase portraits of the system to identify key stability regions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects section -->
+<section id="projects">
+    <h2 class="section-heading">Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>BMP Image Editor</h3>
+            <p>
+                A bitmap image editing application, employing algorithmic optimizations and memory management to
+                accelerate processing and efficiently apply complex image transformations.
+            </p>
+            <p>
+                Comes with a set of ready-to-use filters (grayscale, Gaussian blur, sepia and Laplasian edge detector) and a filter framework
+                for customizing available filters and conveniently creating new ones.
+            </p>
+            <div class="project-technologies">
+                <span>C++</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>CLAS Scheduling System</h3>
+            <p>
+                A scheduling system for Colby Liberal Arts Symposium (CLAS), creating automated schedule
+                and room assignment list for events based on professors' submissions and special requests.
+            </p>
+            <p>
+                Resolves any scheduling conflicts, notifies professors about submission deadlines and students about
+                room changes, securely stores submissions and significantly speeds up the scheduling process.
+            </p>
+            <div class="project-technologies">
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>SQLAlchemy</span>
+                <span>Flask</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills section -->
+<section id="skills">
+    <h2 class="section-heading">Skills & Technologies</h2>
+    <h3 class="skill-subheading">Languages</h3>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <i class="fa-brands fa-python"></i>
+            <p>Python</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-c"></i>
+            <p>C & C++</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-java"></i>
+            <p>Java</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-js"></i>
+            <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+        </div>
+    </div>
+    <h3 class="skill-subheading">Tools & Technologies</h3>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <i class="fa-brands fa-flask"></i>
+            <p>Flask</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-solid fa-database"></i>
+            <p>SQLAlchemy</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-brands fa-git-alt"></i>
+            <p>Git</p>
+        </div>
+        <div class="skill-item">
+            <i class="fa-solid fa-users"></i>
+            <p>Scrum</p>
+        </div>
+        <div class="skill-item">
+            <div class="no-logo">NumPy</div>
+            <p>NumPy</p>
+        </div>
+        <div class="skill-item">
+            <div class="no-logo">SciPy</div>
+            <p>SciPy</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section -->
+<section id="contact">
+    <h2 class="contact-heading">Let's connect!</h2>
+    <p>
+        Here is my contact information. Whether you have a question, an open role, project suggestion or
+        you just want to chat about my experience, feel free to send me a message!
+    </p>
+
+    <div class="contact-links">
+        <a href="https://www.linkedin.com/in/timur-tazeev/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/featgunna" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="mailto:timur.artt@gmail.com" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Copyright info, CS321 mentioned -->
+<footer>
+    <p>Created by Timur Tazeev for CS321 &copy; Colby College 2025</p>
+</footer>
+
+<!-- Linking JavaScript for animations -->
+<script src="script.js"> </script>
+
+</body>
+</html>

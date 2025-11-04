@@ -1,0 +1,53 @@
+/* Navigation bar style */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    /* Glassy blur effect */
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+nav .logo {
+    font-family: 'Bitcount Grid Single', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6); /* nice looking gradient for name (WebKit browsers) */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* nice looking gradient for name (other browsers) */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* List of navigation links */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+/* Action when mouse is hovered above a link */
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Action when a page is scrolled and the current section is highlighted */
+nav ul li a.active {
+    color: var(--primary-color);
+}

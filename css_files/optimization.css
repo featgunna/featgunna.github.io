@@ -1,0 +1,56 @@
+/* Optimization of the grid contents for small screen sizes,
+ * mobile devices in different browsers in particular
+ * Note: Skills and Experience section are already well-optimized,
+ * using auto- methods and cuts when required.
+ * Other sections are manually adjusted below.
+ */
+
+@media (max-width: 800px) {
+    /* Basic section alignment */
+    section {
+        padding: 100px 1rem;
+    }
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    /* Navigation bar links optimization */
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav ul {
+        padding-top: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0 0.75rem;
+    }
+
+    /* Introduction section alignment */
+    #home {
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 3rem;
+    }
+    #home h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Projects grid alignment */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    /* Contact links section alignment */
+    .contact-links a {
+        font-size: 2.5rem;
+    }
+}

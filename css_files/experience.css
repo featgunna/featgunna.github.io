@@ -1,0 +1,68 @@
+/* Experience section styling */
+
+/* Container for an experience */
+.experience-card {
+    display: flex;
+    gap: 20px;
+    background: var(--card-color);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+/* Image of the company's logo */
+.experience-image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    overflow: hidden;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experience-details {
+    flex-grow: 1;
+}
+
+/* Date */
+.experience-date {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Name of company */
+.experience-details h3 {
+    font-size: 1.4rem;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+/* Role */
+.experience-details h4 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+/* Bullet points with role description */
+.experience-details ul {
+    padding-left: 20px;
+}
+
+.experience-details ul li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
